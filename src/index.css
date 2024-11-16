@@ -1,0 +1,24 @@
+.cdx-multicolumn {
+    display: grid;
+    grid-template-columns: repeat(var(--multicolumn-column-count), 1fr);
+    gap: 12px;
+}
+
+@media (max-width: 650px) {
+    .cdx-multicolumn {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cdx-multicolumn_node {
+    --border-color: rgba(201,201,204,.48);
+
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+
+    padding: 8px 12px 0;
+}
+
+.ce-toolbar--opened {
+    z-index: 1;
+}
