@@ -2,7 +2,7 @@
 Adds the ability to make 2 and 3 column content.
 
 ### Preview
-![Preview image](https://raw.githubusercontent.com/VolgaIgor/editorjs-multicolumn/master/assets/screenshot.png)
+![Preview image](https://raw.githubusercontent.com/VolgaIgor/editorjs-multicolumn/refs/heads/main/asset/screenshot.png)
 
 ## Installation
 ### Install via NPM
