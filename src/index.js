@@ -6,7 +6,7 @@ import Column2Icon from './svg/column_2.svg'
 import Column3Icon from './svg/column_3.svg'
 
 /**
- * Multicolumn Inline Tool for the Editor.js
+ * Multicolumn Block Tool for the Editor.js
  */
 export default class Multicolumn {
   /**
@@ -59,6 +59,7 @@ export default class Multicolumn {
     this.config = {
       editorLibrary: config.editorLibrary,
       editorTools: config.editorTools || {},
+      editorTunes: config.editorTunes || [],
     };
     this.readOnly = readOnly;
     this.block = block;
@@ -183,6 +184,7 @@ export default class Multicolumn {
       holder: editorNode,
       data: initialData,
       tools: this.config.editorTools,
+      tunes: this.config.editorTunes,
       minHeight: 100,
       readOnly: this.readOnly,
       onChange: () => {

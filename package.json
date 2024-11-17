@@ -1,6 +1,6 @@
 {
     "name": "editorjs-multicolumn",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
       "codex editor",
       "column",
@@ -15,7 +15,7 @@
       "type": "git",
       "url": "git+https://github.com/VolgaIgor/editorjs-multicolumn.git"
     },
-    "main": "./dist/bundle.js",
+    "main": "./dist/editorjs-multicolumn.bundle.js",
     "scripts": {
       "build": "webpack --mode production",
       "build:dev": "webpack --mode development --watch"

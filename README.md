@@ -67,7 +67,8 @@ const editor = EditorJS({
 | Field | Type     | Description        |
 | ----- | -------- | ------------------ |
 | editorLibrary | `object`   | EditorJS library |
-| editorTools   | `object[]` | Configuration of editor blocks to be available in multicolumn |
+| editorTools   | `object`   | Configuration of editor blocks to be available in multicolumn |
+| editorTunes   | `object[]` | Configuration of editor block tunes to be available in multicolumn |
 
 ## Output data
 
