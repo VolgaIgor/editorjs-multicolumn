@@ -148,9 +148,7 @@ export default class Multicolumn {
     if (!this._rootNode) return;
 
     for (let i = 0; i < this.data.columns; i++) {
-      const editorData = {
-        blocks: this.data.content[i] || []
-      };
+      const editorData = this.data.content[i] || {};
 
       if (this._nodes[i]) {
         const nodeObj = this._nodes[i];
@@ -236,8 +234,12 @@ export default class Multicolumn {
    */
   async save() {
     for (let index in this._nodes) {
-      const saveData = await this._nodes[index].editorjs.save();
-      this._data.content[index] = saveData?.blocks || [];
+      if (this._nodes[index]?.editorjs) {
+        const saveData = await this._nodes[index].editorjs.save();
+        this._data.content[index] = saveData || {};
+      } else {
+        this._data.content[index] = {};
+      }
     }
 
     return {

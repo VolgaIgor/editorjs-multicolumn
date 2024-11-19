@@ -77,4 +77,4 @@ This Tool returns `data` with following format
 | Field          | Type       | Description                      |
 | -------------- | ---------  | -------------------------------- |
 | columns        | `integer`  | Number of columns (`2` of `3`)   |
-| content        | `object[]` | Array of saved column data       |
+| content        | `object[]` | Array of saved EditorJS data     |
