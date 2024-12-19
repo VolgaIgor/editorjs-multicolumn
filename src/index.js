@@ -210,14 +210,14 @@ export default class Multicolumn {
     return [
       {
         icon: Column2Icon,
-        label: '2 columns',
+        label: this.api.i18n.t('2 columns'),
         isActive: () => this.data.columns === 2,
         onActivate: () => this.setColumns(2),
         closeOnActivate: true
       },
       {
         icon: Column3Icon,
-        label: '3 columns',
+        label: this.api.i18n.t('3 columns'),
         isActive: () => this.data.columns === 3,
         onActivate: () => this.setColumns(3),
         closeOnActivate: true
